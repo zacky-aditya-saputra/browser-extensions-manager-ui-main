@@ -30,14 +30,14 @@ body {
 }
 
 main {
-  max-width: 1440px;
+  max-width: 1080px;
   margin: 30px auto;
 }
 
 .searchBar {
   background-color: var(--neutral-0);
   border: 1px solid var(--neutral-200);
-  padding: 15px;
+  padding: 5px 10px;
   border-radius: 15px;
   min-width: 200px;
   display: flex;
@@ -46,12 +46,12 @@ main {
 }
 
 #logo {
-  width: 10%;
+  width: 15%;
   min-width: 100px;
 }
 
 .modeButton {
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -62,7 +62,7 @@ main {
 }
 
 .modeButton img {
-  width: auto;
+  /* width: auto; */
 }
 
 header {
@@ -86,7 +86,7 @@ header button {
   box-shadow: 0.5px 0px 1px var(--neutral-300);
   color: var(--neutral-900);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 header button:hover {
@@ -96,21 +96,20 @@ header button:hover {
 section {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   /* grid-template-rows: repeat(3, 1fr); */
-  column-gap: 15px;
-  row-gap: 15px;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .extBox {
   background-color: var(--neutral-0);
   border: 1px solid var(--neutral-200);
-  Box-shadow: 0.5px 0.5px 2px var(--neutral-300)var(--neutral-300);
+  Box-shadow: 0.5px 0.5px 2px var(--neutral-300);
   border-radius: 15px;
   padding: 20px 18px;
-  /* max-width: 450px;
+  max-width: 310px;
   min-width: 0px;
-  min-height: 100px; */
   display: grid;
   row-gap: 25px;
 }
@@ -121,29 +120,29 @@ section {
   grid-template-areas:  "icon title"
                         "icon desc";
   column-gap: 10px;
-  row-gap: 10px;
+  row-gap: 5px;
 }
 
 .extContent img {
   grid-area: icon;
-  width: 75px;
+  width: 55px;
 }
 
 .extContent h2 {
   grid-area: title;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--neutral-900);
 }
 
 .extContent p {
   grid-area: desc;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--neutral-600);
 }
 
 .extNav {
-  padding-top: 40px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -154,7 +153,7 @@ section {
   border: 1px solid var(--neutral-200);
   border-radius: 20px;
   padding: 5px 10px;
-  font-size: 18px;
+  font-size: 14px;
   box-shadow: 0.5px 0px 1px var(--neutral-300);
   color: var(--neutral-900);
   cursor: pointer;
